@@ -1,0 +1,30 @@
+<!-- basic html template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="cc" class="center-container">
+        <div class="container">
+            <button onclick="clicked()">
+                <div id="animation" class="animation-container"></div>
+            </button>
+        </div>
+    </div>
+</body>
+
+<script>
+    let isReverse = false;
+    const animation = document.getElementById('animation');
+    const cc = document.getElementById('cc');
+    // animation.addEventListener('animationend', () => {
+    //     cc.style.backgroundColor = 'black';
+    // });
+    function clicked() {
+        animation.style['animation-play-state'] = 'running';
+        cc.style['animation-play-state'] = 'running';
+    }
+</script>
